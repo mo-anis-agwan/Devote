@@ -13,6 +13,9 @@
 		88561EC6267B989E008514B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88561EC5267B989E008514B7 /* Preview Assets.xcassets */; };
 		88561EC8267B989E008514B7 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88561EC7267B989E008514B7 /* Persistence.swift */; };
 		88561ECB267B989E008514B7 /* Devote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 88561EC9267B989E008514B7 /* Devote.xcdatamodeld */; };
+		88561ED5267B9A02008514B7 /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88561ED2267B9A01008514B7 /* sound-ding.mp3 */; };
+		88561ED6267B9A02008514B7 /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88561ED3267B9A02008514B7 /* sound-rise.mp3 */; };
+		88561ED7267B9A02008514B7 /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88561ED4267B9A02008514B7 /* sound-tap.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		88561EC7267B989E008514B7 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		88561ECA267B989E008514B7 /* Devote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Devote.xcdatamodel; sourceTree = "<group>"; };
 		88561ECC267B989E008514B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88561ED2267B9A01008514B7 /* sound-ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-ding.mp3"; sourceTree = "<group>"; };
+		88561ED3267B9A02008514B7 /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
+		88561ED4267B9A02008514B7 /* sound-tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-tap.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +63,14 @@
 			isa = PBXGroup;
 			children = (
 				88561EBE267B9897008514B7 /* DevoteApp.swift */,
-				88561EC0267B9897008514B7 /* ContentView.swift */,
-				88561EC2267B989E008514B7 /* Assets.xcassets */,
-				88561EC7267B989E008514B7 /* Persistence.swift */,
-				88561ECC267B989E008514B7 /* Info.plist */,
-				88561EC9267B989E008514B7 /* Devote.xcdatamodeld */,
+				88561EDD267B9A6E008514B7 /* Model */,
+				88561EDA267B9A2D008514B7 /* View */,
+				88561EDB267B9A3A008514B7 /* Extension */,
+				88561EDC267B9A40008514B7 /* Utility */,
+				88561ED9267B9A11008514B7 /* Sounds */,
 				88561EC4267B989E008514B7 /* Preview Content */,
+				88561EC2267B989E008514B7 /* Assets.xcassets */,
+				88561ECC267B989E008514B7 /* Info.plist */,
 			);
 			path = Devote;
 			sourceTree = "<group>";
@@ -73,6 +81,47 @@
 				88561EC5267B989E008514B7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		88561ED9267B9A11008514B7 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				88561ED2267B9A01008514B7 /* sound-ding.mp3 */,
+				88561ED3267B9A02008514B7 /* sound-rise.mp3 */,
+				88561ED4267B9A02008514B7 /* sound-tap.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		88561EDA267B9A2D008514B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				88561EC0267B9897008514B7 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		88561EDB267B9A3A008514B7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		88561EDC267B9A40008514B7 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		88561EDD267B9A6E008514B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				88561EC7267B989E008514B7 /* Persistence.swift */,
+				88561EC9267B989E008514B7 /* Devote.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,7 +182,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				88561EC6267B989E008514B7 /* Preview Assets.xcassets in Resources */,
+				88561ED6267B9A02008514B7 /* sound-rise.mp3 in Resources */,
 				88561EC3267B989E008514B7 /* Assets.xcassets in Resources */,
+				88561ED7267B9A02008514B7 /* sound-tap.mp3 in Resources */,
+				88561ED5267B9A02008514B7 /* sound-ding.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
