@@ -11,9 +11,7 @@ import CoreData
 struct ContentView: View {
     //MARK:- Properties
     @State var task: String = ""
-    private var isButtonDisabled: Bool {
-        task.isEmpty
-    }
+    @State private var showNewTaskItem: Bool = false
     
     //MARK:- Fetching data
     @Environment(\.managedObjectContext) private var viewContext
@@ -24,24 +22,6 @@ struct ContentView: View {
     private var items: FetchedResults<Item>
     
     //MARK:- Function
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-            newItem.task = task
-            newItem.completion = false
-            newItem.id = UUID()
-            
-            do {
-                try viewContext.save()
-            } catch {
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
-        task = ""
-        hideKeyboard()
-    }
     
     private func deleteItems(offsets: IndexSet) {
         withAnimation {
@@ -60,31 +40,14 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ZStack {
+                //MARK:- Main View
                 VStack {
-                    VStack(alignment: .center, spacing: 16, content: {
-                        TextField("New Task", text: $task)
-                            .padding()
-                            .background(
-                                Color(UIColor.systemGray6)
-                            )
-                            .cornerRadius(10)
-                        
-                        Button(action: {
-                            addItem()
-                        }, label: {
-                            Spacer()
-                            Text("Save")
-                            Spacer()
-                        })
-                        .disabled(isButtonDisabled)
-                        .padding()
-                        .font(.headline)
-                        .foregroundColor(Color.white)
-                        .background(isButtonDisabled ? Color.gray :  Color.pink)
-                        .cornerRadius(10)
-                    }) //: VStack
-                    .padding()
+                    //MARK:- Header
+                    Spacer(minLength: 80)
+                    //MARK:- New Task Button
                     
+                    
+                    //MARK:- Tasks
                     List {
                         ForEach(items) { item in
                             VStack(alignment: .leading) {
@@ -104,6 +67,8 @@ struct ContentView: View {
                     .padding(.vertical, 0)
                     .frame(maxWidth: 640)
                 } //: VStack
+                
+                //MARK:- New Task Item
             } //: ZStack
             .onAppear() {
                 UITableView.appearance().backgroundColor = UIColor.clear
