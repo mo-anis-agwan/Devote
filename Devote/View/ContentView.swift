@@ -45,7 +45,21 @@ struct ContentView: View {
                     //MARK:- Header
                     Spacer(minLength: 80)
                     //MARK:- New Task Button
-                    
+                    Button(action: {
+                        showNewTaskItem = true
+                    }, label: {
+                        Image(systemName: "plus.circle")
+                            .font(.system(size: 30, weight: .semibold, design: .rounded))
+                        Text("New Task")
+                            .font(.system(size: 24, weight: .bold, design: .rounded))
+                    })
+                    .foregroundColor(.white)
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 15)
+                    .background(
+                        LinearGradient(gradient: Gradient(colors: [Color.pink, Color.blue]), startPoint: .leading, endPoint: .trailing)
+                            .clipShape(Capsule())
+                    )
                     
                     //MARK:- Tasks
                     List {
@@ -69,6 +83,10 @@ struct ContentView: View {
                 } //: VStack
                 
                 //MARK:- New Task Item
+                if showNewTaskItem {
+                    NewTaskItemView() 
+                }
+                
             } //: ZStack
             .onAppear() {
                 UITableView.appearance().backgroundColor = UIColor.clear
