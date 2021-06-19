@@ -84,7 +84,7 @@ struct ContentView: View {
                 
                 //MARK:- New Task Item
                 if showNewTaskItem {
-                    NewTaskItemView() 
+                    NewTaskItemView()
                 }
                 
             } //: ZStack

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		880A279B267E431400549AAC /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880A279A267E431400549AAC /* BlankView.swift */; };
 		88561EBF267B9897008514B7 /* DevoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88561EBE267B9897008514B7 /* DevoteApp.swift */; };
 		88561EC1267B9897008514B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88561EC0267B9897008514B7 /* ContentView.swift */; };
 		88561EC3267B989E008514B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88561EC2267B989E008514B7 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		880A279A267E431400549AAC /* BlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
 		88561EBB267B9897008514B7 /* Devote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Devote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88561EBE267B9897008514B7 /* DevoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevoteApp.swift; sourceTree = "<group>"; };
 		88561EC0267B9897008514B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				88561EC0267B9897008514B7 /* ContentView.swift */,
 				88C1E62F267CEA680000F4E8 /* BGImageView.swift */,
 				889FA350267DF90000207B06 /* NewTaskItemView.swift */,
+				880A279A267E431400549AAC /* BlankView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				88561EC8267B989E008514B7 /* Persistence.swift in Sources */,
 				88561EC1267B9897008514B7 /* ContentView.swift in Sources */,
 				88C1E62E267CE3290000F4E8 /* HideKeyboardExt.swift in Sources */,
+				880A279B267E431400549AAC /* BlankView.swift in Sources */,
 				88C1E62C267CDA110000F4E8 /* Constant.swift in Sources */,
 				88561ECB267B989E008514B7 /* Devote.xcdatamodeld in Sources */,
 				88561EBF267B9897008514B7 /* DevoteApp.swift in Sources */,
