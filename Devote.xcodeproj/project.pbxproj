@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		880A279B267E431400549AAC /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880A279A267E431400549AAC /* BlankView.swift */; };
+		882C69BA26D16E120088742D /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882C69B926D16E120088742D /* SoundPlayer.swift */; };
 		88561EBF267B9897008514B7 /* DevoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88561EBE267B9897008514B7 /* DevoteApp.swift */; };
 		88561EC1267B9897008514B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88561EC0267B9897008514B7 /* ContentView.swift */; };
 		88561EC3267B989E008514B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88561EC2267B989E008514B7 /* Assets.xcassets */; };
@@ -18,6 +19,8 @@
 		88561ED6267B9A02008514B7 /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88561ED3267B9A02008514B7 /* sound-rise.mp3 */; };
 		88561ED7267B9A02008514B7 /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88561ED4267B9A02008514B7 /* sound-tap.mp3 */; };
 		889FA351267DF90000207B06 /* NewTaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889FA350267DF90000207B06 /* NewTaskItemView.swift */; };
+		88A41F9426CE9717004ACE44 /* ListRowItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A41F9326CE9717004ACE44 /* ListRowItemView.swift */; };
+		88A41F9726CE9D71004ACE44 /* CheckboxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A41F9626CE9D71004ACE44 /* CheckboxStyle.swift */; };
 		88C1E62C267CDA110000F4E8 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C1E62B267CDA110000F4E8 /* Constant.swift */; };
 		88C1E62E267CE3290000F4E8 /* HideKeyboardExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C1E62D267CE3290000F4E8 /* HideKeyboardExt.swift */; };
 		88C1E630267CEA680000F4E8 /* BGImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C1E62F267CEA680000F4E8 /* BGImageView.swift */; };
@@ -25,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		880A279A267E431400549AAC /* BlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
+		882C69B926D16E120088742D /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 		88561EBB267B9897008514B7 /* Devote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Devote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88561EBE267B9897008514B7 /* DevoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevoteApp.swift; sourceTree = "<group>"; };
 		88561EC0267B9897008514B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,6 +41,8 @@
 		88561ED3267B9A02008514B7 /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
 		88561ED4267B9A02008514B7 /* sound-tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-tap.mp3"; sourceTree = "<group>"; };
 		889FA350267DF90000207B06 /* NewTaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskItemView.swift; sourceTree = "<group>"; };
+		88A41F9326CE9717004ACE44 /* ListRowItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowItemView.swift; sourceTree = "<group>"; };
+		88A41F9626CE9D71004ACE44 /* CheckboxStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxStyle.swift; sourceTree = "<group>"; };
 		88C1E62B267CDA110000F4E8 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		88C1E62D267CE3290000F4E8 /* HideKeyboardExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExt.swift; sourceTree = "<group>"; };
 		88C1E62F267CEA680000F4E8 /* BGImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGImageView.swift; sourceTree = "<group>"; };
@@ -76,6 +82,7 @@
 				88561EDD267B9A6E008514B7 /* Model */,
 				88561EDA267B9A2D008514B7 /* View */,
 				88561EDB267B9A3A008514B7 /* Extension */,
+				88A41F9526CE9D58004ACE44 /* Style */,
 				88561EDC267B9A40008514B7 /* Utility */,
 				88561ED9267B9A11008514B7 /* Sounds */,
 				88561EC4267B989E008514B7 /* Preview Content */,
@@ -110,6 +117,7 @@
 				88C1E62F267CEA680000F4E8 /* BGImageView.swift */,
 				889FA350267DF90000207B06 /* NewTaskItemView.swift */,
 				880A279A267E431400549AAC /* BlankView.swift */,
+				88A41F9326CE9717004ACE44 /* ListRowItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -126,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				88C1E62B267CDA110000F4E8 /* Constant.swift */,
+				882C69B926D16E120088742D /* SoundPlayer.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -137,6 +146,14 @@
 				88561EC9267B989E008514B7 /* Devote.xcdatamodeld */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		88A41F9526CE9D58004ACE44 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				88A41F9626CE9D71004ACE44 /* CheckboxStyle.swift */,
+			);
+			path = Style;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,8 +234,11 @@
 				88C1E62E267CE3290000F4E8 /* HideKeyboardExt.swift in Sources */,
 				880A279B267E431400549AAC /* BlankView.swift in Sources */,
 				88C1E62C267CDA110000F4E8 /* Constant.swift in Sources */,
+				88A41F9426CE9717004ACE44 /* ListRowItemView.swift in Sources */,
 				88561ECB267B989E008514B7 /* Devote.xcdatamodeld in Sources */,
 				88561EBF267B9897008514B7 /* DevoteApp.swift in Sources */,
+				88A41F9726CE9D71004ACE44 /* CheckboxStyle.swift in Sources */,
+				882C69BA26D16E120088742D /* SoundPlayer.swift in Sources */,
 				889FA351267DF90000207B06 /* NewTaskItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
